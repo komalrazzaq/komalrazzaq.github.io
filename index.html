@@ -143,13 +143,18 @@ section{
   box-shadow:0 20px 60px rgba(0,0,0,.18);
 }
 
+/* VIDEO - ORIGINAL PROPORTIONS */
+
 .project-video{
   width:100%;
+  max-height:700px;
   display:block;
+  margin:0 auto;
   background:#0d0d0d;
-  aspect-ratio:16/9;
-  object-fit:cover;
+  object-fit:contain;
 }
+
+/* PROJECT CONTENT */
 
 .project-body{
   padding:28px 30px 32px;
@@ -232,13 +237,15 @@ footer{
   .bio{
     font-size:1rem;
   }
+
+  .project-video{
+    max-height:650px;
+  }
 }
 </style>
 </head>
 
 <body>
-
-<!-- HERO -->
 
 <header class="hero">
 
@@ -268,8 +275,6 @@ View AI Video Creation Portfolio
 
 <main>
 
-<!-- PROJECTS -->
-
 <section id="projects">
 
 <div class="wrap">
@@ -282,7 +287,6 @@ AI Video Creation Portfolio
 A selection of AI-generated videos created using generative AI tools,
 creative direction, cinematic camera movement, and visual composition.
 </p>
-
 
 <div class="projects">
 
@@ -298,9 +302,7 @@ Your browser does not support video playback.
 
 <div class="project-body">
 
-<div class="project-number">
-PROJECT 01
-</div>
+<div class="project-number">PROJECT 01</div>
 
 <h2>
 Luxury Living Room – AI Generated Video
@@ -334,9 +336,7 @@ Your browser does not support video playback.
 
 <div class="project-body">
 
-<div class="project-number">
-PROJECT 02
-</div>
+<div class="project-number">PROJECT 02</div>
 
 <h2>
 Modern Bedroom Interior
@@ -359,152 +359,4 @@ and premium lifestyle aesthetics.
 </article>
 
 
-<!-- PROJECT 03 -->
-
-<article class="project">
-
-<video class="project-video" controls playsinline preload="metadata">
-<source src="home-decor-transformation.mp4.mp4" type="video/mp4">
-Your browser does not support video playback.
-</video>
-
-<div class="project-body">
-
-<div class="project-number">
-PROJECT 03
-</div>
-
-<h2>
-Home Decor Transformation
-</h2>
-
-<p class="desc">
-AI-generated home decor transformation demonstrating creative visual
-composition, seamless scene transformation, and cinematic direction.
-</p>
-
-<div class="meta">
-<span class="tag">AI Video</span>
-<span class="tag">Transformation</span>
-<span class="tag">Visual Direction</span>
-</div>
-
-</div>
-
-</article>
-
-
-<!-- PROJECT 04 -->
-
-<article class="project">
-
-<video class="project-video" controls playsinline preload="metadata">
-<source src="fashion-ai-reel.mp4.mp4" type="video/mp4">
-Your browser does not support video playback.
-</video>
-
-<div class="project-body">
-
-<div class="project-number">
-PROJECT 04
-</div>
-
-<h2>
-Fashion AI Reel
-</h2>
-
-<p class="desc">
-AI-generated fashion reel created to demonstrate realistic human motion,
-cinematic camera movement, visual composition, and AI video generation.
-</p>
-
-<div class="meta">
-<span class="tag">AI Video</span>
-<span class="tag">Fashion</span>
-<span class="tag">Creative Direction</span>
-</div>
-
-</div>
-
-</article>
-
-
-<!-- PROJECT 05 -->
-
-<article class="project">
-
-<video class="project-video" controls playsinline preload="metadata">
-<source src="minimal-kitchen.mp4.mp4" type="video/mp4">
-Your browser does not support video playback.
-</video>
-
-<div class="project-body">
-
-<div class="project-number">
-PROJECT 05
-</div>
-
-<h2>
-Minimal Kitchen Design
-</h2>
-
-<p class="desc">
-AI-generated minimalist kitchen visualization demonstrating cinematic
-camera direction, realistic interior details, lighting, and AI video
-generation.
-</p>
-
-<div class="meta">
-<span class="tag">AI Video</span>
-<span class="tag">Interior Design</span>
-<span class="tag">Visual Direction</span>
-</div>
-
-</div>
-
-</article>
-
-
-</div>
-
-</div>
-
-</section>
-
-
-<!-- ABOUT -->
-
-<section id="about">
-
-<div class="wrap">
-
-<h2 class="section-title">
-About
-</h2>
-
-<p class="about">
-I'm continuously learning, experimenting, and building creative projects
-that turn ideas into engaging visual content. My current focus is AI video
-creation, cinematic visual direction, and content for lifestyle, home decor,
-fashion, and marketing.
-</p>
-
-</div>
-
-</section>
-
-</main>
-
-
-<!-- FOOTER -->
-
-<footer>
-
-<div>
-© 2026 Komal Razzaq · AI Video Creator Portfolio
-</div>
-
-</footer>
-
-</body>
-</html>
+<!-- PROJECT 03
