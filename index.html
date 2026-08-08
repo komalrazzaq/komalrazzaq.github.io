@@ -1,409 +1,510 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <meta name="description" content="Komal Razzaq — AI Video Creator, Prompt Engineer and Digital Marketing Learner.">
+<meta name="description" content="Komal Razzaq — AI Video Creator, Prompt Engineer and Digital Marketing Learner.">
 
-  <title>Komal Razzaq | AI Video Creator</title>
+<title>Komal Razzaq | AI Video Creator</title>
 
-  <style>
-    :root {
-      --bg: #171717;
-      --text: #f4f0ea;
-      --muted: #c9c3bc;
-      --gold: #d1ad32;
-      --purple: #a72bc2;
-      --line: rgba(255,255,255,.12);
-      --card: rgba(255,255,255,.035);
-    }
+<style>
+:root{
+  --bg:#171717;
+  --text:#f4f0ea;
+  --muted:#c9c3bc;
+  --gold:#d1ad32;
+  --purple:#a72bc2;
+  --line:rgba(255,255,255,.12);
+  --card:rgba(255,255,255,.035);
+}
 
-    * {
-      box-sizing: border-box;
-    }
+*{
+  box-sizing:border-box;
+}
 
-    html {
-      scroll-behavior: smooth;
-    }
+html{
+  scroll-behavior:smooth;
+}
 
-    body {
-      margin: 0;
-      background:
-        radial-gradient(
-          circle at 50% -10%,
-          #292329 0%,
-          var(--bg) 38%,
-          #111 100%
-        );
-      color: var(--text);
-      font-family: Georgia, "Times New Roman", serif;
-      line-height: 1.6;
-    }
+body{
+  margin:0;
+  background:
+    radial-gradient(circle at 50% -10%,#292329 0%,#171717 38%,#111 100%);
+  color:var(--text);
+  font-family:Georgia,"Times New Roman",serif;
+  line-height:1.6;
+}
 
-    a {
-      color: inherit;
-      text-decoration: none;
-    }
+a{
+  color:inherit;
+  text-decoration:none;
+}
 
-    .wrap {
-      width: min(1120px, 92%);
-      margin: auto;
-    }
+.wrap{
+  width:min(1120px,92%);
+  margin:auto;
+}
 
-    /* ================= HERO ================= */
+/* HERO */
 
-    .hero {
-      min-height: 100vh;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      text-align: center;
-      padding: 70px 0 55px;
-    }
+.hero{
+  min-height:100vh;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  text-align:center;
+  padding:70px 0 55px;
+}
 
-    .hero-inner {
-      max-width: 900px;
-    }
+.hero-inner{
+  max-width:900px;
+}
 
-    h1 {
-      margin: 0;
-      font-size: clamp(2.7rem, 6vw, 5rem);
-      line-height: 1;
-      font-style: italic;
-      font-weight: 700;
-      letter-spacing: 2px;
-      color: var(--purple);
-      text-shadow: 0 0 28px rgba(167,43,194,.12);
-    }
+h1{
+  margin:0;
+  font-size:clamp(2.7rem,6vw,5rem);
+  line-height:1;
+  font-style:italic;
+  font-weight:700;
+  letter-spacing:2px;
+  color:var(--purple);
+  text-shadow:0 0 28px rgba(167,43,194,.12);
+}
 
-    .role {
-      margin: 22px 0 25px;
-      color: var(--gold);
-      font-size: clamp(1rem, 2.2vw, 1.35rem);
-      letter-spacing: .3px;
-    }
+.role{
+  margin:22px 0 25px;
+  color:var(--gold);
+  font-size:clamp(1rem,2.2vw,1.35rem);
+}
 
-    .bio {
-      max-width: 800px;
-      margin: 0 auto;
-      color: var(--text);
-      font-size: clamp(1rem, 2vw, 1.18rem);
-      font-style: italic;
-    }
+.bio{
+  max-width:800px;
+  margin:0 auto;
+  color:var(--text);
+  font-size:clamp(1rem,2vw,1.18rem);
+  font-style:italic;
+}
 
-    .btn {
-      display: inline-block;
-      margin-top: 35px;
-      padding: 13px 28px;
-      border: 1px solid var(--purple);
-      border-radius: 999px;
-      color: var(--text);
-      font-size: 1.05rem;
-      font-style: italic;
-      transition: .25s ease;
-    }
+.btn{
+  display:inline-block;
+  margin-top:35px;
+  padding:13px 28px;
+  border:1px solid var(--purple);
+  border-radius:999px;
+  color:var(--text);
+  font-size:1.05rem;
+  font-style:italic;
+  transition:.25s ease;
+}
 
-    .btn:hover {
-      background: var(--purple);
-      transform: translateY(-2px);
-      box-shadow: 0 8px 30px rgba(167,43,194,.2);
-    }
+.btn:hover{
+  background:var(--purple);
+  transform:translateY(-2px);
+  box-shadow:0 8px 30px rgba(167,43,194,.2);
+}
 
-    /* ================= SECTIONS ================= */
+/* SECTIONS */
 
-    section {
-      padding: 90px 0;
-    }
+section{
+  padding:90px 0;
+}
 
-    .section-title {
-      margin: 0;
-      text-align: center;
-      color: var(--purple);
-      font-size: clamp(2.3rem, 5.5vw, 4rem);
-      font-style: italic;
-      line-height: 1;
-    }
+.section-title{
+  margin:0;
+  text-align:center;
+  color:var(--purple);
+  font-size:clamp(2.3rem,5.5vw,4rem);
+  font-style:italic;
+  line-height:1;
+}
 
-    .section-intro {
-      text-align: center;
-      max-width: 850px;
-      margin: 24px auto 60px;
-      color: var(--muted);
-      font-family: Arial, sans-serif;
-      font-size: 1rem;
-    }
+.section-intro{
+  text-align:center;
+  max-width:850px;
+  margin:24px auto 60px;
+  color:var(--muted);
+  font-family:Arial,sans-serif;
+  font-size:1rem;
+}
 
-    /* ================= PROJECTS ================= */
+/* PROJECTS */
 
-    .projects {
-      display: grid;
-      gap: 34px;
-    }
+.projects{
+  display:grid;
+  gap:34px;
+}
 
-    .project {
-      background: var(--card);
-      border: 1px solid var(--line);
-      border-radius: 18px;
-      overflow: hidden;
-      box-shadow: 0 20px 60px rgba(0,0,0,.18);
-    }
+.project{
+  background:var(--card);
+  border:1px solid var(--line);
+  border-radius:18px;
+  overflow:hidden;
+  box-shadow:0 20px 60px rgba(0,0,0,.18);
+}
 
-    .project-video {
-      width: 100%;
-      display: block;
-      background: #0d0d0d;
-      aspect-ratio: 16 / 9;
-      object-fit: cover;
-    }
+.project-video{
+  width:100%;
+  display:block;
+  background:#0d0d0d;
+  aspect-ratio:16/9;
+  object-fit:cover;
+}
 
-    .video-placeholder {
-      aspect-ratio: 16 / 9;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      text-align: center;
-      padding: 30px;
-      background: linear-gradient(
-        135deg,
-        #191919,
-        #262126
-      );
-      color: #9e9994;
-      font-family: Arial, sans-serif;
-    }
+.project-body{
+  padding:28px 30px 32px;
+}
 
-    .project-body {
-      padding: 28px 30px 32px;
-    }
+.project-number{
+  color:var(--gold);
+  font-family:Arial,sans-serif;
+  font-size:.78rem;
+  letter-spacing:2px;
+}
 
-    .project-number {
-      color: var(--gold);
-      font-family: Arial, sans-serif;
-      font-size: .78rem;
-      letter-spacing: 2px;
-    }
+h2{
+  margin:7px 0 12px;
+  color:var(--gold);
+  font-size:clamp(1.6rem,3vw,2.3rem);
+  font-style:italic;
+}
 
-    h2 {
-      margin: 7px 0 12px;
-      color: var(--gold);
-      font-size: clamp(1.6rem, 3vw, 2.3rem);
-      font-style: italic;
-    }
+.desc{
+  margin:0 0 20px;
+  color:var(--text);
+}
 
-    .desc {
-      margin: 0 0 20px;
-      color: var(--text);
-    }
+.meta{
+  display:flex;
+  flex-wrap:wrap;
+  gap:8px;
+}
 
-    .meta {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 8px;
-    }
+.tag{
+  border:1px solid rgba(209,173,50,.35);
+  border-radius:999px;
+  padding:5px 11px;
+  color:#d8c997;
+  font:12px Arial,sans-serif;
+}
 
-    .tag {
-      border: 1px solid rgba(209,173,50,.35);
-      border-radius: 999px;
-      padding: 5px 11px;
-      color: #d8c997;
-      font: 12px Arial, sans-serif;
-    }
+/* ABOUT */
 
-    /* ================= ABOUT ================= */
+.about{
+  max-width:800px;
+  margin:auto;
+  text-align:center;
+  color:var(--muted);
+  font-family:Arial,sans-serif;
+}
 
-    .about {
-      max-width: 800px;
-      margin: auto;
-      text-align: center;
-      color: var(--muted);
-      font-family: Arial, sans-serif;
-    }
+/* FOOTER */
 
-    /* ================= FOOTER ================= */
+footer{
+  padding:45px 0 60px;
+  text-align:center;
+  border-top:1px solid var(--line);
+  color:#8f8a85;
+  font:13px Arial,sans-serif;
+}
 
-    footer {
-      padding: 45px 0 60px;
-      text-align: center;
-      border-top: 1px solid var(--line);
-      color: #8f8a85;
-      font: 13px Arial, sans-serif;
-    }
+/* MOBILE */
 
-    /* ================= MOBILE ================= */
+@media(max-width:700px){
 
-    @media (max-width: 700px) {
+  .hero{
+    min-height:auto;
+    padding:95px 0 75px;
+  }
 
-      .hero {
-        min-height: auto;
-        padding: 95px 0 75px;
-      }
+  h1{
+    font-size:clamp(2.5rem,12vw,4rem);
+  }
 
-      h1 {
-        font-size: clamp(2.5rem, 12vw, 4rem);
-      }
+  section{
+    padding:70px 0;
+  }
 
-      section {
-        padding: 70px 0;
-      }
+  .project-body{
+    padding:22px;
+  }
 
-      .project-body {
-        padding: 22px;
-      }
-
-      .bio {
-        font-size: 1rem;
-      }
-    }
-  </style>
+  .bio{
+    font-size:1rem;
+  }
+}
+</style>
 </head>
 
 <body>
 
-  <!-- ================= HERO ================= -->
+<!-- HERO -->
 
-  <header class="hero">
+<header class="hero">
 
-    <div class="hero-inner wrap">
+<div class="hero-inner wrap">
 
-      <h1>KOMAL RAZZAQ</h1>
+<h1>KOMAL RAZZAQ</h1>
 
-      <div class="role">
-        AI Video Creator | Prompt Engineer | Digital Marketing Learner
-      </div>
+<div class="role">
+AI Video Creator | Prompt Engineer | Digital Marketing Learner
+</div>
 
-      <p class="bio">
-        I'm an AI Video Creator passionate about creating cinematic and
-        engaging visual content using AI tools and generative platforms.
-        I create videos for home decor, lifestyle, fashion, and digital
-        marketing while exploring AI-powered creative workflows and
-        prompt engineering.
-      </p>
+<p class="bio">
+I'm an AI Video Creator passionate about creating cinematic and engaging
+visual content using AI tools and generative platforms. I create videos
+for home decor, lifestyle, fashion, and digital marketing while exploring
+AI-powered creative workflows and prompt engineering.
+</p>
 
-      <a class="btn" href="#projects">
-        View AI Video Creation Portfolio
-      </a>
+<a class="btn" href="#projects">
+View AI Video Creation Portfolio
+</a>
 
-    </div>
+</div>
 
-  </header>
-
-
-  <!-- ================= MAIN ================= -->
-
-  <main>
-
-    <!-- PROJECTS -->
-
-    <section id="projects">
-
-      <div class="wrap">
-
-        <h2 class="section-title">
-          AI Video Creation Portfolio
-        </h2>
-
-        <p class="section-intro">
-          A selection of AI-generated videos created using generative AI
-          tools, creative direction, cinematic camera movement, and
-          visual composition.
-        </p>
+</header>
 
 
-        <div class="projects">
+<main>
+
+<!-- PROJECTS -->
+
+<section id="projects">
+
+<div class="wrap">
+
+<h2 class="section-title">
+AI Video Creation Portfolio
+</h2>
+
+<p class="section-intro">
+A selection of AI-generated videos created using generative AI tools,
+creative direction, cinematic camera movement, and visual composition.
+</p>
 
 
-          <!-- PROJECT 01 -->
-
-          <article class="project">
-
-            <div class="video-placeholder">
-              <div>
-                Add your video here:<br>
-                <strong>videos/luxury-living-room.mp4</strong>
-              </div>
-            </div>
-
-            <div class="project-body">
-
-              <div class="project-number">
-                PROJECT 01
-              </div>
-
-              <h2>
-                Luxury Living Room – AI Generated Video
-              </h2>
-
-              <p class="desc">
-                AI-generated cinematic living room showcase created
-                to demonstrate interior visualization, camera direction,
-                realistic materials, and AI video generation.
-              </p>
-
-              <div class="meta">
-                <span class="tag">AI Video</span>
-                <span class="tag">Interior Design</span>
-                <span class="tag">Creative Direction</span>
-              </div>
-
-            </div>
-
-          </article>
+<div class="projects">
 
 
-          <!-- PROJECT 02 -->
+<!-- PROJECT 01 -->
 
-          <article class="project">
+<article class="project">
 
-            <div class="video-placeholder">
-              <div>
-                Add your video here:<br>
-                <strong>videos/modern-bedroom.mp4</strong>
-              </div>
-            </div>
+<video class="project-video" controls playsinline preload="metadata">
+<source src="luxury-living-room.mp4.mp4" type="video/mp4">
+Your browser does not support video playback.
+</video>
 
-            <div class="project-body">
+<div class="project-body">
 
-              <div class="project-number">
-                PROJECT 02
-              </div>
+<div class="project-number">
+PROJECT 01
+</div>
 
-              <h2>
-                Modern Bedroom Interior
-              </h2>
+<h2>
+Luxury Living Room – AI Generated Video
+</h2>
 
-              <p class="desc">
-                AI-generated cinematic bedroom visualization focused
-                on realistic interior details, soft lighting, smooth
-                camera movement, and premium lifestyle aesthetics.
-              </p>
+<p class="desc">
+AI-generated cinematic living room showcase created to demonstrate
+interior visualization, camera direction, realistic materials,
+and AI video generation.
+</p>
 
-              <div class="meta">
-                <span class="tag">AI Video</span>
-                <span class="tag">Lifestyle</span>
-                <span class="tag">Cinematic</span>
-              </div>
+<div class="meta">
+<span class="tag">AI Video</span>
+<span class="tag">Interior Design</span>
+<span class="tag">Creative Direction</span>
+</div>
 
-            </div>
+</div>
 
-          </article>
+</article>
 
 
-          <!-- PROJECT 03 -->
+<!-- PROJECT 02 -->
 
-          <article class="project">
+<article class="project">
 
-            <div class="video-placeholder">
-              <div>
-                Add your video here:<br>
-                <strong>videos/home-decor-transformation.mp4</strong>
-              </div>
-            </div>
+<video class="project-video" controls playsinline preload="metadata">
+<source src="modern-bedroom.mp4.mp4" type="video/mp4">
+Your browser does not support video playback.
+</video>
 
-            <div class="project-body">
+<div class="project-body">
 
-              <div class="project-number">
-                PROJECT 03
-              </div>
+<div class="project-number">
+PROJECT 02
+</div>
 
-              <
+<h2>
+Modern Bedroom Interior
+</h2>
+
+<p class="desc">
+AI-generated cinematic bedroom visualization focused on realistic
+interior details, soft lighting, smooth camera movement,
+and premium lifestyle aesthetics.
+</p>
+
+<div class="meta">
+<span class="tag">AI Video</span>
+<span class="tag">Lifestyle</span>
+<span class="tag">Cinematic</span>
+</div>
+
+</div>
+
+</article>
+
+
+<!-- PROJECT 03 -->
+
+<article class="project">
+
+<video class="project-video" controls playsinline preload="metadata">
+<source src="home-decor-transformation.mp4.mp4" type="video/mp4">
+Your browser does not support video playback.
+</video>
+
+<div class="project-body">
+
+<div class="project-number">
+PROJECT 03
+</div>
+
+<h2>
+Home Decor Transformation
+</h2>
+
+<p class="desc">
+AI-generated home decor transformation demonstrating creative visual
+composition, seamless scene transformation, and cinematic direction.
+</p>
+
+<div class="meta">
+<span class="tag">AI Video</span>
+<span class="tag">Transformation</span>
+<span class="tag">Visual Direction</span>
+</div>
+
+</div>
+
+</article>
+
+
+<!-- PROJECT 04 -->
+
+<article class="project">
+
+<video class="project-video" controls playsinline preload="metadata">
+<source src="fashion-ai-reel.mp4.mp4" type="video/mp4">
+Your browser does not support video playback.
+</video>
+
+<div class="project-body">
+
+<div class="project-number">
+PROJECT 04
+</div>
+
+<h2>
+Fashion AI Reel
+</h2>
+
+<p class="desc">
+AI-generated fashion reel created to demonstrate realistic human motion,
+cinematic camera movement, visual composition, and AI video generation.
+</p>
+
+<div class="meta">
+<span class="tag">AI Video</span>
+<span class="tag">Fashion</span>
+<span class="tag">Creative Direction</span>
+</div>
+
+</div>
+
+</article>
+
+
+<!-- PROJECT 05 -->
+
+<article class="project">
+
+<video class="project-video" controls playsinline preload="metadata">
+<source src="minimal-kitchen.mp4.mp4" type="video/mp4">
+Your browser does not support video playback.
+</video>
+
+<div class="project-body">
+
+<div class="project-number">
+PROJECT 05
+</div>
+
+<h2>
+Minimal Kitchen Design
+</h2>
+
+<p class="desc">
+AI-generated minimalist kitchen visualization demonstrating cinematic
+camera direction, realistic interior details, lighting, and AI video
+generation.
+</p>
+
+<div class="meta">
+<span class="tag">AI Video</span>
+<span class="tag">Interior Design</span>
+<span class="tag">Visual Direction</span>
+</div>
+
+</div>
+
+</article>
+
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- ABOUT -->
+
+<section id="about">
+
+<div class="wrap">
+
+<h2 class="section-title">
+About
+</h2>
+
+<p class="about">
+I'm continuously learning, experimenting, and building creative projects
+that turn ideas into engaging visual content. My current focus is AI video
+creation, cinematic visual direction, and content for lifestyle, home decor,
+fashion, and marketing.
+</p>
+
+</div>
+
+</section>
+
+</main>
+
+
+<!-- FOOTER -->
+
+<footer>
+
+<div>
+© 2026 Komal Razzaq · AI Video Creator Portfolio
+</div>
+
+</footer>
+
+</body>
+</html>
