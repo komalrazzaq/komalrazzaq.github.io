@@ -128,6 +128,53 @@ section{
   font-size:1rem;
 }
 
+/* CATEGORY NAVIGATION */
+
+.category-nav{
+  display:flex;
+  flex-wrap:wrap;
+  justify-content:center;
+  gap:10px;
+  margin:0 auto 70px;
+}
+
+.category-nav a{
+  border:1px solid rgba(167,43,194,.45);
+  border-radius:999px;
+  padding:8px 15px;
+  color:var(--muted);
+  font:13px Arial,sans-serif;
+  transition:.25s ease;
+}
+
+.category-nav a:hover{
+  background:var(--purple);
+  color:#fff;
+  border-color:var(--purple);
+}
+
+/* CATEGORY */
+
+.category{
+  margin-bottom:85px;
+  scroll-margin-top:30px;
+}
+
+.category-heading{
+  margin:0 0 10px;
+  color:var(--gold);
+  font-size:clamp(1.8rem,4vw,2.7rem);
+  font-style:italic;
+}
+
+.category-description{
+  max-width:800px;
+  margin:0 0 30px;
+  color:var(--muted);
+  font-family:Arial,sans-serif;
+  font-size:.95rem;
+}
+
 /* PROJECTS */
 
 .projects{
@@ -241,6 +288,21 @@ footer{
   .project-video{
     max-height:650px;
   }
+
+  .category-nav{
+    gap:8px;
+    margin-bottom:55px;
+  }
+
+  .category-nav a{
+    font-size:12px;
+    padding:7px 12px;
+  }
+
+  .category{
+    margin-bottom:65px;
+  }
+
 }
 </style>
 </head>
@@ -260,8 +322,8 @@ AI Video Creator | Prompt Engineer | Digital Marketing Learner
 <p class="bio">
 I'm an AI Video Creator passionate about creating cinematic and engaging
 visual content using AI tools and generative platforms. I create videos
-for home decor, lifestyle, fashion, and digital marketing while exploring
-AI-powered creative workflows and prompt engineering.
+for home decor, lifestyle, fashion, digital marketing, and AI-powered
+creative workflows.
 </p>
 
 <a class="btn" href="#projects">
@@ -285,13 +347,202 @@ AI Video Creation Portfolio
 
 <p class="section-intro">
 A selection of AI-generated videos created using generative AI tools,
-creative direction, cinematic camera movement, and visual composition.
+creative direction, cinematic camera movement, visual composition,
+and AI-powered creative workflows.
+</p>
+
+
+<!-- CATEGORY NAVIGATION -->
+
+<nav class="category-nav">
+
+<a href="#product-ads">AI Product Ads</a>
+
+<a href="#social-reels">Social Media Reels</a>
+
+<a href="#fashion-beauty">Fashion &amp; Beauty</a>
+
+<a href="#ugc-ads">UGC / AI Ad Creatives</a>
+
+<a href="#animation">Animation &amp; Character</a>
+
+<a href="#cinematic">Cinematic Lifestyle &amp; Interiors</a>
+
+</nav>
+
+
+<!-- ==========================================
+     CATEGORY 01 — AI PRODUCT ADS
+========================================== -->
+
+<div class="category" id="product-ads">
+
+<h3 class="category-heading">
+AI Product Ads
+</h3>
+
+<p class="category-description">
+Cinematic AI product visuals created for e-commerce brands,
+advertising campaigns, social media, and promotional content.
+</p>
+
+<div class="projects">
+
+<!-- Future product advertisement videos will be added here -->
+
+</div>
+
+</div>
+
+
+<!-- ==========================================
+     CATEGORY 02 — SOCIAL MEDIA REELS
+========================================== -->
+
+<div class="category" id="social-reels">
+
+<h3 class="category-heading">
+Social Media Reels
+</h3>
+
+<p class="category-description">
+Short-form AI video content designed for Instagram Reels,
+TikTok, Facebook, and social media marketing.
 </p>
 
 <div class="projects">
 
 
 <!-- PROJECT 01 -->
+
+<article class="project">
+
+<video class="project-video" controls playsinline preload="metadata">
+<source src="fashion-ai-reel.mp4.mp4" type="video/mp4">
+Your browser does not support video playback.
+</video>
+
+<div class="project-body">
+
+<div class="project-number">REEL 01</div>
+
+<h2>
+Fashion AI Reel
+</h2>
+
+<p class="desc">
+AI-generated fashion reel created to demonstrate realistic human motion,
+cinematic camera movement, visual composition, and engaging social media
+content.
+</p>
+
+<div class="meta">
+<span class="tag">AI Video</span>
+<span class="tag">Social Media</span>
+<span class="tag">Fashion</span>
+</div>
+
+</div>
+
+</article>
+
+
+</div>
+
+</div>
+
+
+<!-- ==========================================
+     CATEGORY 03 — FASHION & BEAUTY
+========================================== -->
+
+<div class="category" id="fashion-beauty">
+
+<h3 class="category-heading">
+Fashion &amp; Beauty
+</h3>
+
+<p class="category-description">
+AI-generated fashion and beauty visuals created for brands,
+campaigns, social media content, and digital marketing.
+</p>
+
+<div class="projects">
+
+<!-- Future fashion and beauty videos will be added here -->
+
+</div>
+
+</div>
+
+
+<!-- ==========================================
+     CATEGORY 04 — UGC / AI AD CREATIVES
+========================================== -->
+
+<div class="category" id="ugc-ads">
+
+<h3 class="category-heading">
+UGC / AI Ad Creatives
+</h3>
+
+<p class="category-description">
+AI-powered advertising concepts including product demonstrations,
+lifestyle scenes, promotional visuals, and social-first ad creatives.
+</p>
+
+<div class="projects">
+
+<!-- Future UGC and AI advertising videos will be added here -->
+
+</div>
+
+</div>
+
+
+<!-- ==========================================
+     CATEGORY 05 — ANIMATION & CHARACTER
+========================================== -->
+
+<div class="category" id="animation">
+
+<h3 class="category-heading">
+Animation &amp; Character
+</h3>
+
+<p class="category-description">
+AI-generated character animation, storytelling, and creative visual
+concepts for brands, campaigns, and digital content.
+</p>
+
+<div class="projects">
+
+<!-- Future animation and character videos will be added here -->
+
+</div>
+
+</div>
+
+
+<!-- ==========================================
+     CATEGORY 06 — CINEMATIC LIFESTYLE & INTERIORS
+========================================== -->
+
+<div class="category" id="cinematic">
+
+<h3 class="category-heading">
+Cinematic Lifestyle &amp; Interiors
+</h3>
+
+<p class="category-description">
+Cinematic AI visualizations for interiors, home decor, lifestyle,
+and premium visual storytelling.
+</p>
+
+<div class="projects">
+
+
+<!-- PROJECT 02 -->
 
 <article class="project">
 
@@ -325,7 +576,7 @@ and AI video generation.
 </article>
 
 
-<!-- PROJECT 02 -->
+<!-- PROJECT 03 -->
 
 <article class="project">
 
@@ -359,7 +610,7 @@ and premium lifestyle aesthetics.
 </article>
 
 
-<!-- PROJECT 03 -->
+<!-- PROJECT 04 -->
 
 <article class="project">
 
@@ -383,41 +634,8 @@ composition, seamless scene transformation, and cinematic direction.
 
 <div class="meta">
 <span class="tag">AI Video</span>
-<span class="tag">Transformation</span>
+<span class="tag">Home Decor</span>
 <span class="tag">Visual Direction</span>
-</div>
-
-</div>
-
-</article>
-
-
-<!-- PROJECT 04 -->
-
-<article class="project">
-
-<video class="project-video" controls playsinline preload="metadata">
-<source src="fashion-ai-reel.mp4.mp4" type="video/mp4">
-Your browser does not support video playback.
-</video>
-
-<div class="project-body">
-
-<div class="project-number">PROJECT 04</div>
-
-<h2>
-Fashion AI Reel
-</h2>
-
-<p class="desc">
-AI-generated fashion reel created to demonstrate realistic human motion,
-cinematic camera movement, visual composition, and AI video generation.
-</p>
-
-<div class="meta">
-<span class="tag">AI Video</span>
-<span class="tag">Fashion</span>
-<span class="tag">Creative Direction</span>
 </div>
 
 </div>
@@ -436,7 +654,7 @@ Your browser does not support video playback.
 
 <div class="project-body">
 
-<div class="project-number">PROJECT 05</div>
+<div class="project-number">PROJECT 04</div>
 
 <h2>
 Minimal Kitchen Design
@@ -460,6 +678,9 @@ generation.
 
 
 </div>
+
+</div>
+
 </div>
 
 </section>
@@ -478,8 +699,8 @@ About
 <p class="about">
 I'm continuously learning, experimenting, and building creative projects
 that turn ideas into engaging visual content. My current focus is AI video
-creation, cinematic visual direction, and content for lifestyle, home decor,
-fashion, and marketing.
+creation, cinematic visual direction, social media content, product visuals,
+fashion and beauty content, and AI-powered creative workflows.
 </p>
 
 </div>
